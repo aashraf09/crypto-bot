@@ -1,0 +1,320 @@
+// navbar
+.ui {
+    &.container {
+        &.nav {
+            width: 100%;
+            max-width: 100%;
+            padding: 1.25rem;
+            margin: 0 !important;
+        }
+    }
+}
+
+.ui {
+    &.nav {
+        &.menu {
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 3.5rem;
+            position: relative;
+
+            a {
+                text-decoration: none;
+                font-family: @text;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 1.5rem;
+                text-transform: none;
+
+                &:hover {
+                    color: @yellow-button;
+                }
+
+                &.active {
+                    color: @yellow-button;
+
+                    &:hover {
+                        color: @yellow-button;
+                    }
+                }
+
+            }
+
+            .icon {
+                cursor: pointer;
+                width: 3rem;
+            }
+
+            .nav-mobile {
+                position: absolute;
+                top: 110%;
+                z-index: 1000;
+                border-radius: 3.5rem;
+                padding: 5rem 4.4375rem;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @media @mobile {
+                    padding: 4rem 2.5rem;
+                }
+
+                .ui.list {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+
+                    a {
+                        .link {
+                            text-decoration: none;
+                            font-family: @text;
+                            font-size: 1rem;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 1.5rem;
+                            margin-bottom: 2rem;
+                        }
+
+                        &:last-child {
+                            width: 100%;
+
+                            .link {
+                                padding: 1rem 0;
+                                margin-top: -0.4rem;
+                                border-top: 1px solid @grey;
+                                border-bottom: 1px solid @grey;
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    display: flex;
+                    width: 250px;
+                    padding: 16px 32px;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: @yellow-button;
+                    color: @dark-blue;
+                    border-radius: 40px;
+                    font-family: @text;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+
+                    @media @mobile {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &.nav-light{
+            background-color: @header-dark-blue;
+            
+            a{
+                color: @white;
+            }
+
+            .nav-mobile{
+                background-color: @header-dark-blue;
+            }
+        }
+        &.nav-dark{
+            background-color: @header-white;
+            
+            a{
+                color: @dark-blue;
+
+                &:hover {
+                    color: @blue-button;
+                }
+
+                &.active {
+                    color: @blue-button;
+
+                    &:hover {
+                        color: @blue-button;
+                    }
+                }
+            }
+
+            .nav-mobile{
+                background-color: @header-white;
+            }
+
+        }
+    }
+}
+
+// logo
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+        &:nth-child(2) {
+            display: block;
+
+            @media @mobile {
+                display: none;
+            }
+        }
+    }
+}
+
+.ui {
+    &.button {
+        &.login {
+            border-radius: 2.5rem;
+            background: @blue-button;
+            color: @dark-blue;
+            display: flex;
+            width: 8.5rem;
+            height: 3rem;
+            padding: 1rem 2rem;
+            justify-content: center;
+            align-items: center;
+            font-family: @text;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1.5rem;
+        }
+
+    }
+}
+
+// footer
+.ui {
+    &.container {
+        &.footer {
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 6rem 4.5rem 6rem;
+
+            @media @tablet {
+                padding: 0 4rem 4.5rem 4rem;
+            }
+
+            @media @mobile {
+                padding: 0 1.5rem 3.5rem 1.5rem;
+            }
+
+            .ui.grid {
+                border-top: 1px solid @grey;
+                padding-top: 4.5rem;
+
+                @media @mobile {
+                    padding-top: 3.5rem;
+                }
+
+                .four.column.row {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .column {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: auto !important;
+
+                        &:first-child {
+                            h1 {
+                                font-family: @lato;
+                                font-size: 1.5rem;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 2rem;
+                            }
+
+                            @media @tablet {
+                                width: 100% !important;
+                                align-items: center;
+                                justify-content: center;
+                                margin-bottom: 3rem;
+
+                                h1 {
+                                    text-align: center;
+                                    margin: 0;
+                                }
+                            }
+
+                            @media @mobile {
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        a {
+                            font-family: @text;
+                            font-size: 1rem;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 1.5rem;
+                            margin: 0;
+                            margin-bottom: 1.3rem;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        &:last-child {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-end;
+
+                            img {
+                                width: 2rem;
+                                height: 2rem;
+                                cursor: pointer;
+
+                                @media @mobile {
+                                    margin-bottom: 1.3rem;
+
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    @media @mobile {
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        gap: 3.5rem;
+                    }
+                }
+            }
+        }
+        &.footer-light{
+            background-color: @dark-blue;
+            color: @white;
+            h1{
+                color: @white;
+            }
+
+            a{
+                color: @white;
+            }
+        }
+        &.footer-dark{
+            background-color: @white;
+color: @dark-blue;
+            h1{
+                color: @dark-blue;
+            }
+
+            a{
+                color: @dark-blue;
+            }
+        }
+    }
+}

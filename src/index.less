@@ -1,0 +1,54 @@
+@import './assets/less/variables.less';
+@import './assets/less/layout.less';
+@import './assets//less/creators.less';
+@import './assets//less/copiers.less';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: @dark-blue;
+  overflow-x: hidden !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: Unageo;
+  src: url('./assets/fonts/Unageo-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url('./assets/fonts/Raleway-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('./assets/fonts/Lato-Regular.ttf'); 
+}
+
+// -------------------------------------------------------------------------
+// ------------------------- Light and Dark Mode Settings -------------------
+// ---------------------------------------------------------------------------
+
+// 1. Background Colors
+.bg-light{
+  background-color: @dark-blue-90;
+}
+
+.bg-dark{
+  background-color: @white;
+}

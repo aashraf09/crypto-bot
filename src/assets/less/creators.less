@@ -1,0 +1,1976 @@
+// hero
+.ui {
+    &.container {
+        width: 100% !important;
+
+        &.hero {
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 5rem 6rem;
+
+            @media @tablet {
+                padding: 4rem;
+            }
+
+            @media @mobile {
+                padding: 1rem 1.5rem !important;
+            }
+
+            .grand-title {
+                font-family: @heading;
+                font-size: 5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 5.5rem;
+                width: 60%;
+                margin: 0;
+
+                @media @tablet {
+                    font-size: 4rem;
+                    line-height: 4.5rem;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                @media @mobile {
+                    font-size: 3.5rem;
+                    line-height: 4rem;
+                }
+            }
+
+            p {
+                font-family: @text;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.5rem;
+                margin-top: 1.5rem;
+                width: 40%;
+
+                @media @tablet {
+                    width: 55%;
+                    margin: 2rem auto 0 auto;
+                    text-align: center;
+                }
+
+                @media @mobile {
+                    width: 100%;
+                    margin: 1rem auto 0 auto;
+                    text-align: center;
+                }
+            }
+
+            button {
+                border-radius: 2.5rem;
+                background: @yellow-button;
+                display: flex;
+                width: 15.625rem;
+                padding: 1rem 2rem;
+                justify-content: center;
+                align-items: center;
+                color: @dark-blue;
+                font-family: @text;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 1.5rem;
+                margin-top: 3.5rem;
+
+                @media @tablet {
+                    margin: 3.5rem auto 0 auto;
+                }
+
+                @media @mobile {
+                    margin: 2.5rem auto 0 auto;
+                }
+            }
+
+            .stat {
+                display: flex;
+                align-items: center;
+                gap: 2.625rem;
+                justify-content: flex-start;
+                margin-top: 3.5rem;
+
+                @media @tablet {
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 3.5rem auto 0 auto;
+                    gap: 3rem;
+                    margin-left: 4rem;
+                }
+
+                h3 {
+                    font-family: @text;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 2.5rem;
+                    width: 35rem;
+                    margin: 0;
+
+                    @media @tablet {
+                        flex: 1;
+                        font-size: 1.75rem;
+                        line-height: 2rem;
+                        text-align: start;
+                        width: auto;
+                        border-right: 1px solid @white;
+                    }
+                }
+                h2 {
+                    font-family: @heading;
+                    font-size: 2rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 2.5rem;
+                    width: 21.125rem;
+                    margin: 0;
+
+                    @media @tablet {
+                        flex: 1;
+                        font-size: 1.75rem;
+                        line-height: 2rem;
+                        text-align: start;
+                        width: auto;
+                        border-right: 1px solid @white;
+                    }
+                }
+
+                h1 {
+                    font-family: @heading;
+                    font-size: 3.5rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 4rem;
+                    margin: 0;
+
+                    @media @tablet {
+                        flex: 1;
+                        font-size: 3rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 3.5rem;
+                        text-align: start;
+                    }
+                }
+            }
+
+            .mobileStat {
+                margin-top: 2.5rem;
+
+                h1 {
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 1.75rem;
+                    text-align: center;
+
+                    span {
+                        font-weight: 800 !important;
+                    }
+                }
+            }
+
+            .img-box {
+                position: absolute;
+                top: 19rem;
+                right: 0;
+
+                @media @tablet {
+                    top: 43rem;
+                }
+
+                @media @mobile {
+                    top: 46rem;
+
+                    img {
+                        width: 23rem !important;
+                    }
+                }
+            }
+        }
+        &.hero-light{
+            background-color: @dark-blue;
+
+            h1, h2, h3{
+                color: @white;
+            }
+
+            p{
+                color: @white-90;
+            }
+        }
+
+        &.hero-dark{
+            background-color: @white;
+
+            h1, h2, h3{
+                color: @dark-blue;
+            }
+
+            p{
+                color: @dark-blue-90;
+            }
+        }
+    }
+}
+
+//email card top
+.ui {
+    &.container {
+        &.email-card-top {
+            width: 100%;
+            padding: 8rem 6rem 17rem 6rem;
+            position: relative;
+
+            @media @tablet {
+                padding: 40rem 4rem 17rem 4rem;
+            }
+
+            @media @mobile {
+                margin: 0 !important;
+                padding: 26rem 1.5rem 12rem 1.5rem;
+            }
+
+            .card {
+                background-color: @light-blue-bg;
+                border-radius: 3.5rem;
+                display: flex;
+                padding: 4.5rem 3.5rem;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+
+                @media @tablet {
+                    height: 52.5rem;
+                }
+
+                @media @mobile {
+                    padding: 3rem 2.5rem !important;
+                    height: 45.5rem;
+                }
+
+                h1 {
+                    font-family: @heading;
+                    font-size: 3.5rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 4rem;
+                    text-align: start;
+                    color: @dark-blue;
+                    margin: 0;
+
+                    @media @tablet {
+                        font-size: 3rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 3.5rem;
+                    }
+
+                    @media @mobile {
+                        font-size: 2.5rem;
+                        line-height: 2.75rem;
+                    }
+
+                    .blue {
+                        color: @blue;
+                    }
+                }
+
+                p {
+                    font-family: @text;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 2rem;
+                    color: @dark-blue-90;
+                    text-align: start;
+                    margin-top: 1rem;
+                    margin-bottom: 3rem;
+
+                    @media @mobile {
+                        font-size: 1.25rem;
+                        line-height: 1.75rem;
+                        margin-bottom: 2.5rem;
+                    }
+                }
+
+                .input {
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        border-top-left-radius: 2.5rem !important;
+                        border-bottom-left-radius: 2.5rem !important;
+                        background-color: @white;
+                        overflow: hidden;
+                        border: 1px solid @white;
+                        padding: 1.25rem 2rem;
+                        width: 20rem;
+
+                        @media @mobile {
+                            width: 11rem;
+                            padding: 0.7rem 1rem;
+                        }
+
+                        &::placeholder {
+                            color: @dark-blue-90;
+                            font-family: @text;
+                            font-size: 1rem;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 1.5rem;
+                        }
+                    }
+
+                    button {
+                        margin: 0;
+                        border-radius: 0rem 2.5rem 2.5rem 0rem;
+                        background-color: @yellow-button;
+                        color: @dark-blue;
+                        display: flex;
+                        width: 12.5rem;
+                        padding: 1.25rem 2rem;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: @text;
+                        font-size: 1rem;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 1.5rem;
+                        border: none;
+                        outline: none;
+
+                        @media @mobile {
+                            width: 7rem;
+                            padding: 0.7rem 1rem;
+                        }
+                    }
+                }
+
+                .stat {
+                    display: flex;
+                    align-items: center;
+                    gap: 2.38rem;
+                    justify-content: flex-start;
+                    margin-top: 3rem;
+
+                    @media @mobile {
+                        margin-top: 2.5rem;
+                    }
+
+                    h2 {
+                        color: @blue;
+                        font-family: @heading;
+                        font-size: 3.5rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 4rem;
+                        margin: 0;
+
+                        @media @tablet {
+                            font-size: 3rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 3.5rem;
+                        }
+
+                        @media @mobile {
+                            font-size: 2.5rem;
+                            line-height: 2.75rem;
+                        }
+                    }
+
+                    h1 {
+                        color: @dark-blue;
+                        font-family: @heading;
+                        font-size: 2rem;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 2.5rem;
+                        text-align: start;
+                        margin: 0;
+
+                        @media @tablet {
+                            font-size: 1.75rem;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 2rem;
+                        }
+
+                        @media @mobile {
+                            font-size: 1.25rem;
+                            line-height: 1.75rem;
+                        }
+                    }
+                }
+
+                .right-img {
+                    position: absolute;
+                    right: -6rem;
+                    top: 1rem;
+                    width: 40rem !important;
+                    height: auto !important;
+
+                    @media @tablet {
+                        top: auto;
+                        bottom: -5rem;
+                        margin: 0 auto;
+                        right: 0;
+                        left: 0;
+                    }
+
+                    @media @mobile {
+                        bottom: 2rem;
+                        width: 20rem !important;
+                    }
+
+                    img {
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        &.email-card-top-light{
+            background-color: @dark-blue;
+        }
+
+        &.email-card-top-dark {
+            background-color: @white;
+        }
+    }
+}
+
+// bots section
+.ui {
+    &.container {
+        &.bots-section {
+            width: 100%;
+            padding: 8rem 6rem 17rem 6rem;
+            background-color: @light-green-bg;
+            position: relative;
+            margin-top: -1px;
+
+            @media @tablet {
+                padding: 8rem 4rem 17rem 4rem;
+            }
+
+            @media @mobile {
+                padding: 5rem 1.5rem 12rem 1.5rem;
+                margin: 0 !important;
+            }
+
+            .topbar {
+                position: relative;
+
+                .card {
+                    background-color: @light-green-bg;
+                    border-radius: 3.5rem;
+                    display: flex;
+                    padding: 6rem 5.38rem;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    position: absolute;
+                    width: 100%;
+                    top: -17rem;
+                    box-shadow: none;
+
+                    @media @tablet {
+                        padding: 5rem 4.4rem;
+                    }
+
+                    @media @mobile {
+                        padding: 3.5rem 2.5rem;
+                        top: -11rem;
+                    }
+
+                    h1 {
+                        color: @green;
+                        font-family: @heading;
+                        font-size: 5rem;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: 5.5rem;
+
+                        @media @tablet {
+                            font-size: 4rem;
+                            line-height: 4.5rem;
+                        }
+
+                        @media @mobile {
+                            font-size: 3rem;
+                            line-height: 3.5rem;
+                        }
+
+                        span {
+                            color: @dark-blue;
+                            font-size: 4.5rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 5rem;
+
+                            @media @tablet {
+                                font-size: 3.5rem;
+                                line-height: 4rem;
+                            }
+
+                            @media @mobile {
+                                font-size: 3rem;
+                                line-height: 3.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .level-1 {
+                margin: 0;
+                padding: 0;
+                margin-top: 6rem;
+
+                @media @tablet {
+                    margin-top: 4rem;
+                }
+
+                @media @mobile {
+                    margin-top: 2.5rem;
+                }
+
+                .row {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    gap: 1.25rem;
+
+                    .column {
+                        display: flex;
+                        flex: 1;
+                        width: 100%;
+                        height: 35.5rem;
+                        padding: 4.5rem 5.375rem;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        flex-shrink: 0;
+                        border-radius: 3.5rem;
+
+                        @media @tablet {
+                            padding: 4.5rem 4.4375rem;
+                        }
+
+                        @media @mobile {
+                            padding: 3.5rem 2.5rem;
+                            height: auto;
+                        }
+                    }
+
+                    &:first-child {
+                        .column {
+                            background-color: @green;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            position: relative;
+
+                            .info {
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+                                margin-left: auto;
+
+                                @media @tablet {
+                                    width: 100%;
+                                    margin-right: auto;
+                                }
+
+                                .ui.header {
+                                    color: @white;
+                                    font-family: @heading;
+                                    font-size: 3.5rem;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 4rem;
+                                    margin-bottom: 2rem;
+
+                                    @media @tablet {
+                                        font-size: 3rem;
+                                        line-height: 3.5rem;
+                                    }
+
+                                    @media @mobile {
+                                        font-size: 2.5rem;
+                                        line-height: 2.75rem;
+                                        margin-bottom: 1.5rem;
+                                    }
+                                }
+
+                                p {
+                                    color: @white-90;
+                                    font-family: @text;
+                                    font-size: 1rem;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 1.5rem;
+                                    width: 60%;
+
+                                    @media @tablet {
+                                        width: 80%;
+                                    }
+
+                                    @media @mobile {
+                                        width: 100%;
+                                        font-size: 0.875rem;
+                                        line-height: 1.25rem;
+                                    }
+                                }
+
+                                [role='list'] {
+                                    margin-bottom: 2rem !important;
+                                    margin-top: 0 !important;
+
+                                    @media @mobile {
+                                        margin-bottom: 1.5rem !important;
+                                    }
+
+                                    [role='listitem'] {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 0.3rem;
+
+                                        i {
+                                            color: @white;
+                                            font-weight: 600;
+                                        }
+                                        .content {
+                                            color: @white;
+                                            font-family: @lato;
+                                            font-size: 1rem;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            line-height: 1.5rem;
+
+                                            @media @mobile {
+                                                font-size: 0.875rem;
+                                                line-height: 1.25rem;
+                                            }
+
+                                            span {
+                                                color: @white-90;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .img {
+                                position: absolute;
+                                left: 4rem;
+                                bottom: 0;
+                                width: 20rem;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        padding: 0;
+
+                        .column {
+                            background-color: @dark-blue;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            position: relative;
+
+                            @media @tablet {
+                                height: 61.5rem;
+                            }
+
+                            @media @mobile {
+                                height: 48rem;
+                            }
+
+                            .info {
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+                                margin-right: auto;
+
+                                @media @tablet {
+                                    width: 100%;
+                                    margin-right: auto;
+                                }
+
+                                h1 {
+                                    color: @white;
+                                    font-family: @heading;
+                                    font-size: 3.5rem;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 4rem;
+                                    margin: 0;
+
+                                    @media @tablet {
+                                        font-size: 3rem;
+                                        line-height: 3.5rem;
+                                    }
+
+                                    @media @mobile {
+                                        font-size: 2.5rem;
+                                        line-height: 2.75rem;
+                                    }
+                                }
+
+                                [role='list'] {
+                                    margin-top: 2rem;
+
+                                    @media @mobile {
+                                        margin-top: 1.5rem !important;
+                                    }
+
+                                    [role='listitem'] {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 0.3rem;
+
+                                        @media @mobile {
+                                            align-items: flex-start;
+                                        }
+
+                                        i {
+                                            color: @white;
+                                            font-weight: 600;
+
+                                            @media @mobile {
+                                                font-size: 0.875rem;
+                                                line-height: 1.25rem;
+                                            }
+                                        }
+                                        .content {
+                                            color: @white;
+                                            font-family: @text;
+                                            font-size: 1rem;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            line-height: 1.5rem;
+
+                                            @media @mobile {
+                                                font-size: 0.875rem;
+                                                line-height: 1rem;
+                                            }
+
+                                            span {
+                                                color: @white-90;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .img {
+                                position: absolute;
+                                right: 4rem;
+                                bottom: 0;
+                                width: 20rem;
+                                object-fit: contain;
+
+                                @media @tablet {
+                                    right: 0;
+                                    left: 0;
+                                    margin: 0 auto;
+                                    width: 24rem;
+                                }
+
+                                @media @mobile {
+                                    right: 0;
+                                    left: 0;
+                                    margin: 0 auto;
+                                    width: 15rem;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .column {
+                            background-color: @white;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            position: relative;
+
+                            .info {
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+                                margin-left: auto;
+
+                                @media @tablet {
+                                    width: 100%;
+                                    margin-right: auto;
+                                }
+
+                                .ui.header {
+                                    color: @dark-blue;
+                                    font-family: @heading;
+                                    font-size: 3.5rem;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 4rem;
+                                    margin-bottom: 1rem;
+
+                                    @media @tablet {
+                                        font-size: 3rem;
+                                        line-height: 3.5rem;
+                                    }
+
+                                    @media @mobile {
+                                        font-size: 2.5rem;
+                                        line-height: 2.75rem;
+                                        margin-bottom: 1rem;
+                                    }
+                                }
+
+                                p {
+                                    color: @dark-blue-90;
+                                    font-family: @text;
+                                    font-size: 1.5rem;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 2rem;
+                                    margin-bottom: 2rem !important;
+
+                                    @media @mobile {
+                                        width: 100%;
+                                        font-size: 0.875rem;
+                                        line-height: 1.25rem;
+                                        margin-bottom: 1.5rem !important;
+                                    }
+                                }
+
+                                [role='list'] {
+                                    margin-top: 0;
+                                    [role='listitem'] {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 0.3rem;
+
+                                        i {
+                                            color: @dark-blue;
+                                            font-weight: 600;
+
+                                            @media @mobile {
+                                                font-size: 0.875rem;
+                                                line-height: 0;
+                                            }
+                                        }
+                                        .content {
+                                            color: @dark-blue;
+                                            font-family: @text;
+                                            font-size: 1rem;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            line-height: 1.5rem;
+
+                                            @media @mobile {
+                                                font-size: 0.875rem;
+                                                line-height: 1.25rem;
+                                            }
+
+                                            span {
+                                                color: @dark-blue-90;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .img {
+                                position: absolute;
+                                left: 4rem;
+                                bottom: 0;
+                                width: 20rem;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// publisher section
+.ui {
+    &.container {
+        &.publisher-section {
+            width: 100%;
+            padding: 8rem 6rem 17rem 6rem;
+            background-color: @light-blue-bg;
+            position: relative;
+            margin-top: -1px;
+
+            @media @tablet {
+                padding: 8rem 4rem 17rem 4rem;
+            }
+
+            @media @mobile {
+                padding: 5rem 1.5rem 12rem 1.5rem;
+                margin: 0 !important;
+            }
+
+            .topbar {
+                position: relative;
+
+                .card {
+                    background-color: @light-blue-bg;
+                    border-radius: 3.5rem;
+                    display: flex;
+                    padding: 6rem 5.38rem;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    position: absolute;
+                    width: 100%;
+                    top: -17rem;
+                    box-shadow: none;
+
+                    @media @tablet {
+                        padding: 5rem 4.4rem;
+                    }
+
+                    @media @mobile {
+                        padding: 3.5rem 2.5rem;
+                        top: -11rem;
+                    }
+
+                    h1 {
+                        color: @blue;
+                        font-family: @heading;
+                        font-size: 5rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 5.5rem;
+
+                        @media @tablet {
+                            font-size: 4rem;
+                            line-height: 4.5rem;
+                        }
+
+                        @media @mobile {
+                            font-size: 3rem;
+                            line-height: 3.5rem;
+                        }
+
+                        span {
+                            color: @dark-blue;
+                            font-size: 4.5rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 5rem;
+
+                            @media @tablet {
+                                font-size: 3.5rem;
+                                line-height: 4rem;
+                            }
+
+                            @media @mobile {
+                                font-size: 3rem;
+                                line-height: 3.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .level-1 {
+                margin: 0;
+                padding: 0;
+                margin-top: 6rem;
+
+                @media @tablet {
+                    margin-top: 4rem;
+                }
+
+                @media @mobile {
+                    margin-top: 7rem;
+                }
+
+                .row {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    gap: 1.25rem;
+
+                    @media @tablet {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .column {
+                        display: flex;
+                        flex: 1;
+                        width: 100%;
+                        height: 36rem;
+                        padding: 3.5rem 3.5rem 4.5rem 3.5rem;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        flex-shrink: 0;
+                        border-radius: 3.5rem;
+
+                        @media @tablet {
+                            padding: 3.5rem 3rem 4.5rem 3rem;
+                        }
+
+                        @media @mobile {
+                            padding: 2.5rem 1.25rem 3rem 1.25rem;
+                        }
+
+                        &:first-child {
+                            background-color: @blue;
+
+                            img {
+                                object-fit: contain;
+                                margin: 0 auto;
+                            }
+
+                            h1 {
+                                color: @white;
+                                font-family: @heading;
+                                font-size: 3.5rem;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 4rem;
+                                margin: 0;
+
+                                @media @tablet {
+                                    font-size: 3rem;
+                                    line-height: 3.5rem;
+                                }
+
+                                @media @mobile {
+                                    font-size: 2.5rem;
+                                    line-height: 2.75rem;
+                                }
+                            }
+
+                            p {
+                                color: @white-90;
+                                font-family: @text;
+                                font-size: 1rem;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 1.5rem;
+                                margin-top: 1rem;
+
+                                @media @mobile {
+                                    font-size: 0.875rem;
+                                    line-height: 1.25rem;
+                                }
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            background-color: @white;
+
+                            img {
+                                object-fit: contain;
+                                margin: 0 auto;
+                            }
+
+                            h1 {
+                                color: @dark-blue;
+                                font-family: @heading;
+                                font-size: 3.5rem;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 4rem;
+                                margin: 0;
+
+                                @media @tablet {
+                                    font-size: 3rem;
+                                    line-height: 3.5rem;
+                                }
+
+                                @media @mobile {
+                                    font-size: 2.5rem;
+                                    line-height: 2.75rem;
+                                }
+                            }
+
+                            p {
+                                color: @dark-blue-90;
+                                font-family: @text;
+                                font-size: 1rem;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 1.5rem;
+                                margin-top: 1rem;
+
+                                @media @mobile {
+                                    font-size: 0.875rem;
+                                    line-height: 1.25rem;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        padding: 0;
+
+                        .column {
+                            background-color: @dark-blue;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            position: relative;
+
+                            @media @tablet {
+                                min-height: 61.5rem !important;
+                            }
+
+                            @media @mobile {
+                                min-height: 48rem !important;
+                            }
+
+                            .info {
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+
+                                .badge {
+                                    width: 7rem;
+                                    object-fit: contain;
+                                    position: absolute;
+                                    top: 3.5rem;
+                                    left: 3.5rem;
+
+                                    @media @mobile {
+                                        width: 4rem;
+                                        top: 2rem;
+                                        left: 1.5rem;
+                                    }
+                                }
+
+                                h1 {
+                                    color: @white;
+                                    font-family: @heading;
+                                    font-size: 3.5rem;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 4rem;
+
+                                    @media @tablet {
+                                        font-size: 3rem;
+                                        line-height: 3.5rem;
+                                    }
+
+                                    @media @mobile {
+                                        font-size: 2.5rem;
+                                        line-height: 2.75rem;
+                                    }
+                                }
+
+                                p {
+                                    color: @white-90;
+                                    font-family: @text;
+                                    font-size: 1rem;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 1.5rem;
+                                    width: 60%;
+
+                                    @media @tablet {
+                                        width: 80%;
+                                    }
+
+                                    @media @mobile {
+                                        width: 100%;
+                                        font-size: 0.875rem;
+                                        line-height: 1.25rem;
+                                    }
+                                }
+                            }
+
+                            .globe {
+                                position: absolute;
+                                right: 0;
+                                width: 40rem;
+                                object-fit: contain;
+
+                                @media @tablet {
+                                    margin: auto;
+                                    right: 0;
+                                    left: 0;
+                                    top: 10rem;
+                                    width: 45rem;
+                                }
+
+                                @media @tablet {
+                                    margin: auto;
+                                    right: 0;
+                                    left: 0;
+                                    top: 12rem;
+                                    width: 40rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// tradable section
+.ui {
+    &.container {
+        &.tradable-section {
+            width: 100%;
+            padding: 8rem 6rem 5.5rem 6rem;
+            background-color: @light-purple-bg;
+            position: relative;
+            margin-top: -1px;
+
+            @media @tablet {
+                padding: 8rem 4rem 5.5rem 4rem;
+            }
+
+            @media @mobile {
+                padding: 5rem 1.5rem 5.5rem 1.5rem;
+                margin: 0 !important;
+            }
+
+            .topbar {
+                position: relative;
+
+                .card {
+                    background-color: @light-purple-bg;
+                    border-radius: 3.5rem;
+                    display: flex;
+                    padding: 6rem 5.38rem;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    position: absolute;
+                    width: 100%;
+                    top: -17rem;
+                    box-shadow: none;
+
+                    @media @tablet {
+                        padding: 5rem 4.4rem;
+                    }
+
+                    @media @mobile {
+                        padding: 3.5rem 2.5rem;
+                        top: -11rem;
+                    }
+
+                    h1 {
+                        color: @purple;
+                        font-family: @heading;
+                        font-size: 4.5rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 5rem;
+
+                        @media @tablet {
+                            font-size: 4rem;
+                            line-height: 4.5rem;
+                        }
+
+                        @media @mobile {
+                            font-size: 3rem;
+                            line-height: 3.5rem;
+                        }
+
+                        span {
+                            color: @dark-blue;
+                            font-size: 4.5rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 5rem;
+
+                            @media @tablet {
+                                font-size: 3.5rem;
+                                line-height: 4rem;
+                            }
+
+                            @media @mobile {
+                                font-size: 3rem;
+                                line-height: 3.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .level-1 {
+                margin: 0;
+                padding: 0;
+                margin-top: 6rem;
+
+                @media @tablet {
+                    margin-top: 4rem;
+                }
+
+                @media @mobile {
+                    margin-top: 7rem;
+                }
+
+                .row {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    gap: 1.25rem;
+
+                    @media @tablet {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .column {
+                        display: flex;
+                        flex: 1;
+                        width: 100%;
+                        height: 36rem;
+                        padding: 3.5rem 3.5rem 4.5rem 3.5rem;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        flex-shrink: 0;
+                        border-radius: 3.5rem;
+
+                        @media @tablet {
+                            padding: 3.5rem 3rem 4.5rem 3rem;
+                        }
+
+                        @media @mobile {
+                            padding: 2.5rem 1.25rem 3rem 1.25rem;
+                        }
+
+                        &:first-child {
+                            background-color: @purple;
+
+                            img {
+                                object-fit: cover;
+                                width: 18rem;
+                                margin: -2rem auto 0 auto;
+                            }
+
+                            h1 {
+                                color: @white;
+                                font-family: @heading;
+                                font-size: 3.5rem;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 4rem;
+
+                                @media @tablet {
+                                    font-size: 3rem;
+                                    line-height: 3.5rem;
+                                }
+
+                                @media @mobile {
+                                    font-size: 2.5rem;
+                                    line-height: 2.75rem;
+                                }
+                            }
+
+                            p {
+                                color: @white-90;
+                                font-family: @text;
+                                font-size: 1rem;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 1.5rem;
+
+                                @media @mobile {
+                                    font-size: 0.875rem;
+                                    line-height: 1.25rem;
+                                }
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            background-color: @white;
+
+                            img {
+                                object-fit: contain;
+                                width: 18rem;
+                                margin: -2rem auto 0 auto;
+                            }
+
+                            h1 {
+                                color: @dark-blue;
+                                font-family: @heading;
+                                font-size: 3.5rem;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 4rem;
+                                margin: 0;
+
+                                @media @tablet {
+                                    font-size: 3rem;
+                                    line-height: 3.5rem;
+                                }
+
+                                @media @mobile {
+                                    font-size: 2.5rem;
+                                    line-height: 2.75rem;
+                                }
+                            }
+
+                            p {
+                                color: @dark-blue-90;
+                                font-family: @text;
+                                font-size: 1rem;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 1.5rem;
+                                margin-top: 1rem;
+
+                                @media @mobile {
+                                    font-size: 0.875rem;
+                                    line-height: 1.25rem;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        padding: 0;
+
+                        .column {
+                            display: flex;
+                            flex: 1;
+                            width: 100%;
+                            height: 36rem;
+                            padding: 3.5rem 3.5rem 4.5rem 3.5rem;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            flex-shrink: 0;
+                            border-radius: 3.5rem;
+
+                            @media @mobile {
+                                padding: 2.5rem 1.25rem 3rem 1.25rem;
+                            }
+
+                            &:first-child {
+                                background-color: @white;
+
+                                img {
+                                    object-fit: contain;
+                                    width: 28rem;
+                                    margin: 0 auto;
+                                }
+
+                                h1 {
+                                    color: @dark-blue;
+                                    font-family: @heading;
+                                    font-size: 3.5rem;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 4rem;
+
+                                    @media @tablet {
+                                        font-size: 3rem;
+                                        line-height: 3.5rem;
+                                    }
+
+                                    @media @mobile {
+                                        font-size: 2.5rem;
+                                        line-height: 2.75rem;
+                                    }
+                                }
+
+                                p {
+                                    color: @dark-blue-90;
+                                    font-family: @text;
+                                    font-size: 1rem;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 1.5rem;
+
+                                    @media @mobile {
+                                        font-size: 0.875rem;
+                                        line-height: 1.25rem;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                background-color: @dark-blue;
+
+                                img {
+                                    object-fit: contain;
+                                    width: 28rem;
+                                    margin: 0 auto;
+                                }
+
+                                h1 {
+                                    color: @white;
+                                    font-family: @heading;
+                                    font-size: 3.5rem;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 4rem;
+
+                                    @media @tablet {
+                                        font-size: 3rem;
+                                        line-height: 3.5rem;
+                                    }
+                                }
+
+                                p {
+                                    color: @white-90;
+                                    font-family: @text;
+                                    font-size: 1rem;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 1.5rem;
+
+                                    @media @mobile {
+                                        font-size: 0.875rem;
+                                        line-height: 1.25rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// message card
+.ui {
+    &.container {
+        &.message-card {
+            width: 100%;
+            padding: 8rem 6rem 0 6rem;
+
+            @media @tablet {
+                padding: 8rem 4rem 0 4rem !important;
+            }
+
+            @media @mobile {
+                padding: 5rem 1.5rem 0 1.5rem !important;
+                margin: 0 !important;
+            }
+
+            .card {
+                // background-color: @dark-blue;
+                border-radius: 3.5rem;
+                display: flex;
+                padding: 3.5rem 3.5rem 4.5rem 3.5rem;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                position: relative;
+
+                @media @tablet {
+                    height: 61.5rem;
+                    justify-content: space-between;
+                    padding: 3.5rem 3rem 4.5rem 3rem !important;
+                }
+
+                @media @mobile {
+                    height: 48rem;
+                    padding: 2rem 1.25rem 3rem 1.25rem !important;
+                }
+
+                .circular-img {
+                    width: 4rem;
+                    height: 4rem;
+                    padding: 0.5rem;
+                    border-radius: 6.25rem !important;
+                    background: @dark-blue;
+                    overflow: hidden;
+                }
+
+                .msg-box {
+                    margin-top: 2.5rem;
+
+                    @media @tablet {
+                        margin-top: auto !important;
+                    }
+
+                    h1 {
+                        font-family: @heading;
+                        font-size: 3.5rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 4rem;
+
+                        @media @tablet {
+                            font-size: 3rem;
+                            line-height: 3.5rem;
+                        }
+
+                        @media @mobile {
+                            font-size: 2.5rem;
+                            line-height: 2.75rem;
+                        }
+                    }
+
+                    p {
+                        font-family: @text;
+                        font-size: 1.5rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 2rem;
+                        width: 50%;
+
+                        @media @tablet {
+                            width: 100% !important;
+                        }
+
+                        @media @mobile {
+                            font-size: 1.25rem;
+                            line-height: 1.75rem;
+                        }
+                    }
+
+                    [role='list'] {
+                        [role='listitem'] {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.3rem;
+
+                            i {
+                                font-weight: 600;
+                            }
+                            .content {
+                                font-family: @text;
+                                font-size: 1rem;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 1.5rem;
+                            }
+                        }
+                    }
+                }
+
+                .top-img {
+                    position: absolute;
+                    right: 2rem;
+                    top: 1rem;
+                    z-index: 100;
+
+                    @media @tablet {
+                        top: 3.5rem;
+                    }
+
+                    @media @mobile {
+                        top: 3.5rem;
+                        width: 5rem;
+                    }
+
+                    img {
+                        object-fit: contain;
+                    }
+                }
+
+                .mid-img {
+                    position: absolute;
+                    right: 8rem;
+                    top: 4rem;
+                    width: 17rem;
+
+                    @media @mobile {
+                        width: 10rem;
+                    }
+
+                    img {
+                        object-fit: contain;
+                    }
+                }
+
+                .bottom-img {
+                    position: absolute;
+                    right: 25rem;
+                    bottom: 2rem;
+
+                    @media @tablet {
+                        top: 20rem;
+                    }
+
+                    @media @mobile {
+                        left: 1.25rem;
+                        right: auto;
+                        top: 14.5rem;
+                        z-index: 10000;
+                        width: 6rem;
+                    }
+
+                    img {
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        &.message-card-light{
+            background-color: @dark-blue;
+            color: @white;
+
+            .card{
+                background-color: @white;
+
+                h1{
+                    color: @dark-blue;
+                }
+
+                p, .content, i{
+                    color: @dark-blue-90;
+                }
+            }
+        }
+
+        &.message-card-dark{
+            background-color: @white;
+            color: @dark-blue;
+            
+            .card{
+                background-color: @dark-blue;
+            }
+
+            h1{
+                    color: @white;
+                }
+
+                p, .content, i{
+                    color: @white-90;
+                }
+        }
+    }
+}
+
+//email card bottom
+.ui {
+    &.container {
+        &.email-card-btm {
+            width: 100%;
+            padding: 1.25rem 6rem 10rem 6rem;
+            position: relative;
+
+            @media @tablet {
+                padding: 1.25rem 4rem 10rem 4rem !important;
+            }
+
+            @media @mobile {
+                padding: 1.25rem 1.5rem 5.5rem 1.5rem !important;
+                margin: 0 !important;
+            }
+
+            .card {
+                background-color: @light-blue-bg;
+                border-radius: 3.5rem;
+                display: flex;
+                padding: 4.5rem 3.5rem;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                @media @tablet {
+                    padding: 4.5rem 3rem !important;
+                    height: 52.5rem;
+                    align-items: flex-start !important;
+                }
+
+                @media @mobile {
+                    padding: 3rem 1.25rem !important;
+                    height: 45.5rem;
+                }
+
+                h1 {
+                    font-family: @heading;
+                    font-size: 3.5rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 4rem;
+                    text-align: center;
+                    color: @dark-blue;
+                    margin: 0;
+
+                    @media @tablet {
+                        text-align: start !important;
+                        font-size: 3rem;
+                        line-height: 3.5rem;
+                    }
+
+                    @media @mobile {
+                        font-size: 2.5rem !important;
+                        line-height: 2.75rem !important;
+                    }
+
+                    .blue {
+                        color: @blue;
+                    }
+                }
+
+                p {
+                    font-family: @text;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 2rem;
+                    color: @dark-blue-90;
+                    text-align: center;
+                    margin: 1rem auto 0 auto;
+                    width: 60%;
+                    margin-bottom: 3rem;
+
+                    @media @tablet {
+                        text-align: start !important;
+                        width: 90% !important;
+                        margin: 1rem auto 3rem 0 !important;
+                    }
+
+                    @media @mobile {
+                        font-size: 1.25rem !important;
+                        line-height: 1.75rem !important;
+                    }
+                }
+
+                .input {
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        border-top-left-radius: 2.5rem !important;
+                        border-bottom-left-radius: 2.5rem !important;
+                        background-color: @white;
+                        overflow: hidden;
+                        border: 1px solid @white;
+                        padding: 1.25rem 2rem;
+                        width: 20rem;
+
+                        @media @mobile {
+                            width: 11rem !important;
+                            padding: 0.7rem 1rem !important;
+                        }
+
+                        &::placeholder {
+                            color: @dark-blue-90;
+                            font-family: @text;
+                            font-size: 1rem;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 1.5rem;
+                        }
+                    }
+
+                    button {
+                        margin: 0;
+                        border-radius: 0rem 2.5rem 2.5rem 0rem;
+                        background-color: @yellow-button;
+                        color: @dark-blue;
+                        display: flex;
+                        width: 12.5rem;
+                        padding: 1.25rem 2rem;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: @text;
+                        font-size: 1rem;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 1.5rem;
+                        border: none;
+                        outline: none;
+
+                        @media @mobile {
+                            width: 7rem !important;
+                            padding: 0.7rem 1rem !important;
+                        }
+                    }
+                }
+
+                .stat {
+                    display: flex;
+                    align-items: center;
+                    gap: 2.38rem;
+                    justify-content: flex-start;
+                    margin-top: 3rem;
+
+                    @media @mobile {
+                        margin-top: 2.5rem;
+                    }
+
+                    h2 {
+                        color: @blue;
+                        font-family: @heading;
+                        font-size: 3.5rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 4rem;
+                        margin: 0;
+
+                        @media @mobile {
+                            font-size: 2.5rem !important;
+                            line-height: 2.75rem !important;
+                        }
+                    }
+
+                    h1 {
+                        color: @dark-blue;
+                        font-family: @heading;
+                        font-size: 2rem;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 2.5rem;
+                        text-align: start;
+                        margin: 0;
+
+                        @media @mobile {
+                            font-size: 1.25rem !important;
+                            line-height: 1.75rem !important;
+                        }
+                    }
+                }
+
+                .img-bot {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    display: block;
+
+                    @media @mobile {
+                        display: none;
+                    }
+                }
+
+                .right-img {
+                    position: absolute;
+                    bottom: -7rem;
+                    right: -5rem;
+
+                    @media @mobile {
+                        width: 12rem;
+                        right: 0 !important;
+                        left: 0 !important;
+                        margin: 0 auto !important;
+                        bottom: 0 !important;
+                    }
+                }
+            }
+        }
+        &.email-card-btm-light{
+            background-color: @dark-blue;
+        }
+        &.email-card-btm-dark{
+            background-color: @white;
+        }
+
+
+    }
+}

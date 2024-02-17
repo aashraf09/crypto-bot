@@ -1,0 +1,35 @@
+#checkbox {
+  display: none;
+}
+.toggle {
+  height: 48px;
+  width: 107px;
+  border-radius: 9999px;
+  background-image: url('../images/night_mode_img.png');
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#checkbox:checked + .toggle {
+  background-image: url('../images/light_mode_img.png');
+  background-size: cover;
+}
+
+.toggle::before {
+  content: "";
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  transition: all 0.5s ease-in-out;
+}
+
+#checkbox:checked + .toggle::before {
+  position: absolute;
+  left: calc(100% - 45px);
+}

@@ -13,7 +13,6 @@ import {
 } from 'semantic-ui-react';
 
 import useScreenSize from '../../hooks/useScreenSize';
-
 import phone1 from '../../assets/images/phone-straight.png';
 import phone2 from '../../assets/images/iphone.png';
 import phone3 from '../../assets/images/phone-balance.png';
@@ -21,9 +20,8 @@ import phone4 from '../../assets/images/iphone-centered.png';
 
 const BotsSection = () => {
     const { screenSize, orientation } = useScreenSize();
-
     return (
-        <Container className="bots-section">
+        <Container className="bots-section colored-section" data-color="#fff">
             <div className="topbar">
                 <Card>
                     <Header as="h1">

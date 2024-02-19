@@ -196,6 +196,7 @@
             width: 100% !important;
             margin: 0 !important;
             padding: 0 6rem 4.5rem 6rem;
+            position: relative;
 
             @media @tablet {
                 padding: 0 4rem 4.5rem 4rem;
@@ -203,6 +204,11 @@
 
             @media @mobile {
                 padding: 0 1.5rem 3.5rem 1.5rem;
+            }
+
+            &::after{
+                position: absolute;
+                content: '';
             }
 
             .ui.grid {
@@ -223,6 +229,7 @@
                         flex-direction: column;
                         justify-content: space-between;
                         width: auto !important;
+                        // gap: 2rem;
 
                         &:first-child {
                             h1 {
@@ -268,8 +275,9 @@
                             display: flex;
                             flex-direction: column;
                             align-items: flex-end;
+                            justify-content: space-between;
 
-                            img {
+                            i {
                                 width: 2rem;
                                 height: 2rem;
                                 cursor: pointer;
@@ -307,7 +315,7 @@
         }
         &.footer-dark{
             background-color: @white;
-color: @dark-blue;
+            color: @dark-blue;
             h1{
                 color: @dark-blue;
             }

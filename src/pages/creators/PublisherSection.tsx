@@ -7,7 +7,7 @@ import globe from '../../assets/images/globe.png';
 
 const PublisherSection = () => {
     return (
-        <Container className="publisher-section">
+        <Container className="publisher-section colored-section">
             <div className="topbar">
                 <Card>
                     <Header as="h1">

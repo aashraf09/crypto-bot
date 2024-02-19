@@ -7,6 +7,24 @@ import PublisherSection from './PublisherSection';
 import TradableSection from './TradableSection';
 
 const Creators = () => {
+    const changeBackgroundColor = () => {
+        const coloredSections = document.querySelectorAll('.colored-section') as NodeListOf<HTMLElement>;
+        coloredSections.forEach((section) => {
+            if (section.getBoundingClientRect().top <= window.innerHeight) {
+                document.body.style.backgroundColor = section.dataset.color as string;
+            }
+        });
+    };
+
+    window.addEventListener('load', () => {
+        changeBackgroundColor();
+        window.addEventListener('scroll', changeBackgroundColor);
+        window.addEventListener('touchmove', changeBackgroundColor);
+    });
+
+    window.addEventListener('beforeunload', () => {
+        window.removeEventListener('scroll', changeBackgroundColor);
+    });
     return (
         <div>
             <Hero />

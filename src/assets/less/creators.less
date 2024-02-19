@@ -176,13 +176,14 @@
                 position: absolute;
                 top: 19rem;
                 right: 0;
+                z-index: 1;
 
                 @media @tablet {
-                    top: 43rem;
+                    top: 40rem;
                 }
 
                 @media @mobile {
-                    top: 46rem;
+                    top: 40rem;
 
                     img {
                         width: 23rem !important;
@@ -301,11 +302,11 @@
                     align-items: center;
 
                     input {
-                        border-top-left-radius: 2.5rem !important;
-                        border-bottom-left-radius: 2.5rem !important;
+                        border-top-left-radius: 2.5rem solid @white!important;
+                        border-bottom-left-radius: 2.5rem solid @white !important;
                         background-color: @white;
                         overflow: hidden;
-                        border: 1px solid @white;
+                        // border: 1px solid @white;
                         padding: 1.25rem 2rem;
                         width: 20rem;
 

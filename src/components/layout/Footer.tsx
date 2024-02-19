@@ -49,9 +49,15 @@ const Footer = () => {
                         </Header>
                     </GridColumn>
                     <GridColumn>
-                        <FontAwesomeIcon icon={faSquareFacebook} size="2xl" />
-                        <FontAwesomeIcon icon={faSquareXTwitter} size="2xl" />
-                        <FontAwesomeIcon icon={faLinkedin} size="2xl" />
+                        <Link to={'/'}>
+                            <FontAwesomeIcon icon={faSquareFacebook} size="2xl" />
+                        </Link>
+                        <Link to={'/'}>
+                            <FontAwesomeIcon icon={faSquareXTwitter} size="2xl" />
+                        </Link>
+                        <Link to={'/'}>
+                            <FontAwesomeIcon icon={faLinkedin} size="2xl" />
+                        </Link>
                     </GridColumn>
                 </GridRow>
             </Grid>
